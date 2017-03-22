@@ -8,21 +8,25 @@ void setup () {
 void draw () {
   background(0,0,0);
  
-  if(mouseX <= screenwidth/2) {
+  //red bottom right
+  if(mouseX >= screenwidth/2 && mouseY >=screenheight/2 ) 
     background(200,0,0);
-  
-/*  if(mouseY <=screenheight/2) {
+    
+  //blue top left
+  if(mouseY <=screenheight/2 && mouseX <=screenwidth/2) 
     background(0,0,255);
-
-  if(mouseX >=screenwidth/2) {
-    background(0,200,0);
+    
+  //green top right
+  if(mouseX >=screenwidth/2 && mouseY <=screenheight/2) 
+    background(0,100,0);
+    
+  // yellow bottom left
+  if(mouseY >=screenheight/2 && mouseX<=screenwidth/2) 
+    background(255,255,0);
+    
   
-  if(mouseY >=screenheight/2) {
-    background(
-  }  
-  }
- */   
-  }
+  
+  
   stroke(255);
   line(400,0,400,height);
   
